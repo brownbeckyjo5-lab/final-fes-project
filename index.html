@@ -17,7 +17,7 @@
 
   <body>
     <section id="landing">
-      <nav>
+      <nav class="container">
         <div class="row nav__row">
           <div class="nav__logo">
             <img
@@ -25,8 +25,21 @@
               alt="Treact logo: a purple letter T centered on a white rounded square."
             />
           </div>
-          <!--  -->Enter Nav Links here<!--  -->
-          <button class="btn__menu" onclick="openMenu()">
+          <div class="nav__links">
+            <a class="nav__link">About</a>
+            <a class="nav__link">Blog</a>
+            <a class="nav__link">Pricing</a>
+            <a class="nav__link">Contact Us</a>
+            <a class="nav__link">Login</a>
+            <a class="nav__link nav__link--primary">Sign Up</a>
+            <button class="btn__menu" onclick="openMenu('Sign Up')"></button>
+          </div>
+        </nav>
+      </section>
+            </body>
+            </button>
+
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -80,25 +93,26 @@
             <span class="highlight purple">for you.</span>
           </div>
         </div>
+           <img
+            src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+            alt="Illustration of a computer screen with a design on it, surrounded by a pencil, a ruler, and a paintbrush."
+            class="header-img"
+            
+          />
         <div class="container">
-          <div class="row">
-            <p>
-              Treact is a collection of free and premium React templates that
-              are easy to customize and built with best practices in mind.
+          <div class="row">We have Amazing <span class="highlight purple">Service.</span>
+           
             </p>
           </div>
         </div>
         <div class="container">
-          <div class="row">
+          <div class="row"> 
             <button class="btn btn--primary">Get Started</button>
             <button class="btn btn--secondary">View Templates</button>
           </div>
         </div>
         <source>
-          <img
-            src="assets/landing.2c489fc453a1783cbadacf914efa3df6.png"
-            alt=""
-          />
+       
         </source>
       </header>
     </section>
@@ -110,17 +124,20 @@
               <div class="feature__icon">
                 <i class="fas fa-rocket"></i>
               </div>
-                <h3 class="feature__title">We have Amazing Services</h3>
-                <div class=""
+                <h3 class="feature__title"><span class="highlight purple">Features</span></h3>
+                <div class="feature__text">
+                 </p>
+                </div>
               </p>
           </div>
         </div>
       </section>
       <section id="quality">
         <div class="container">
-          <div class="row"><!--  -->Enter Quality Work Section<!--  --></div>
+          <div class="row">We have Amazing 
+            <span class="highlight purple">Service.</span></div>
         </div>
-      </section>
+      </section>ter Quality Work Section
       <section id="steps">
         <div class="container">
           <div class="row"><!--  -->Enter Steps Section<!--  --></div>
