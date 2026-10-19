@@ -15,7 +15,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -51,7 +51,10 @@ NAVBAR ↓
 
 nav {
     display: flex;
-    padding-top: 32px;
+    padding-top: 8px;
+    justify-content: space-between;
+    align-items: center;
+    size: 16px;
 }
 
 .nav__row {
@@ -140,7 +143,21 @@ nav {
 HEADER / ABOUT US ↓
 
 */
+header {
+    padding: 96px 0;
+    background-color: rgb(234, 228, 247);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    font-variant-position: super;
+    border-bottom: 1px solid rgb(229, 231, 235);
+    }
+    
+    .border-box {
+    box-sizing: border-box;
 
+    } 
+    
 
 header .row {
     display: flex;
