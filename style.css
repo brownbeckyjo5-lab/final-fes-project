@@ -186,19 +186,18 @@ header {
   color: #fff;
   font-size: 30px;
   font-weight: 600;
-  font-variant-position: super;
   border-bottom: 1px solid rgb(229, 231, 235);
   border-top: 1px solid rgb(229, 231, 235);
   border-radius: 8px;
   border: #1a202c;
   border-width: 1px;
   border-style: solid;
+  border: none;
 }
 
 .header-img {
-  width: 80%;
-  height: 80%;
-  border: 1px solid rgb(16, 2, 32);
+  width: 50%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -207,6 +206,13 @@ header .row {
   align-items: center;
   justify-content: space-between;
 }
+
+  header h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
 
 .border-box {
   box-sizing: border-box;
