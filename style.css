@@ -41,7 +41,11 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
-
+.row__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 .container {
@@ -95,6 +99,11 @@ nav {
   align-items: center;
   margin: 8px 0;
   padding-bottom: 4px;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .btn__menu {
@@ -190,6 +199,7 @@ header {
   width: 80%;
   height: 80%;
   border: 1px solid rgb(16, 2, 32);
+  border-radius: 8px;
 }
 
 header .row {
