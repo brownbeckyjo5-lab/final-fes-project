@@ -105,10 +105,11 @@ NAVBAR ↓
 
 nav {
   display: flex;
-  padding-top: 6px;
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
+  border: 1px solid #e5e7eb;
+  padding: 12px 24px;
 }
 .nav-img {
   width: 32px;
@@ -119,7 +120,9 @@ nav {
   align-items: center;
   gap: 32px;
 }
-
+.nav__links a {
+  white-space: nowrap;
+}
 .nav__row {
   display: flex;
   justify-content: space-between;
