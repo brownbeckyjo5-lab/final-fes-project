@@ -399,8 +399,10 @@ FEATURES ↓
 
 */
 
-#features {
+#Features {
   position: relative;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -408,7 +410,32 @@ FEATURES ↓
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
+  .feature__text {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.feature__text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+.feature title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.feature__img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 32px;
+}
+.feature__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* 
