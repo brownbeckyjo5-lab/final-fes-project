@@ -386,7 +386,25 @@ header .row {
     width: 100%;
   }
 }
-
+img.customers-logo-strip {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 32px auto;
+  display: block;
+}
+.img__logo-strip {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 32px auto;
+  display: block;
+}
+.img.customers-logo-strip img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 .border-box {
   box-sizing: border-box;
