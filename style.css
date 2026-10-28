@@ -318,23 +318,25 @@ header {
 
 }
 .header-text {
-    width: 55%;
-    text-align: left;
-
-  }
+  width: 40%;
+  min-width: 0;
+  text-align: left;
+}
 
 header .row {
   display: flex;
   width: 100%;
-  max-width: 500px;
+  max-width: 1200px;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
 }
+
  .header-img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-  }
+  width: 55%;
+  max-width: 600px;
+  height: auto;
+}
 
 .header__email .btn {
   flex-shrink: 0;
@@ -498,7 +500,6 @@ FEATURES ↓
 .feature__icon {
   width: 56px;
   height: 56px;
-  flex-shrink: 0;
   border: 1px solid #e5e7eb;
   border-radius: 50%;
   display: flex;
