@@ -112,6 +112,13 @@ nav {
   border: 1px solid #6415ff;
   padding: 12px 24px;
 }
+
+img.customers-logo-strip {  
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 32px;
+}
 .nav-img {
   width: 32px;
   height: 32px;
@@ -388,12 +395,12 @@ header .row {
     width: 100%;
   }
 }
-img.customers-logo-strip {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 32px auto;
+.customers-logo-strip {
   display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 32px;
 }
 .img__logo-strip {
   width: 100%;
