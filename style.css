@@ -16,7 +16,25 @@ body {
   border: 1px solid #6415ff;
   border-image: linear-gradient(to right, #6415ff, #f7fafc);
 }
+.quality__title {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
 
+#quality .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+.quality__button {
+  background-color: #6415ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 32px;
+  font-size: 14px;  
+}
 .row {
   width: 100%;
   max-width: 1200px;
