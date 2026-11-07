@@ -130,6 +130,30 @@ nav {
   border: 1px solid #6415ff;
   padding: 12px 24px;
 }
+img.nav__logo {
+  width: 50px;
+  height: auto;
+}
+img.nav__img {
+  width: 32px;
+  height: 32px;
+}
+img.nav__img--small {
+  width: 24px;
+  height: 24px;
+}
+img.nav__img--large {
+  width: 48px;
+  height: 48px;
+}
+img.nav__img--medium {
+  width: 32px;
+  height: 32px;
+}
+img.nav__img--icon {
+  width: 24px;
+  height: 24px;
+}
 
 img.customers-logo-strip {  
   width: 100%;
