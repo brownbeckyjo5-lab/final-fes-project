@@ -7,8 +7,12 @@
   font-family: "Inter", system-ui;
   color: #243e63;
 }
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0;
   max-width: 100vw;
   overflow-x: hidden;
   display: flex;
@@ -52,6 +56,13 @@ body {
   margin: 0 auto;
 }
 
+#landing nav.container {
+  padding: 16px 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -86,6 +97,13 @@ header .container {
   flex-direction: column;
 }
 
+.container img {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+  gap: 24px;
+}
+
 .container--narrow {
   padding: 80px 0;
   display: flex;
@@ -98,9 +116,6 @@ header .container {
     line-height: 1.2;
     margin-bottom: 16px;
 
-}
-#landing nav.container {
-  padding: 16px 32px;
 }
 
 .purple {
@@ -129,6 +144,9 @@ nav {
   font-size: 16px;
   border: 1px solid #6415ff;
   padding: 12px 24px;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box; 
 }
 img.nav__logo {
   width: 50px;
@@ -155,27 +173,33 @@ img.nav__img--icon {
   height: 24px;
 }
 
-img.customers-logo-strip {  
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin-top: 32px;
-}
 .nav-img {
   width: 32px;
   height: 32px;
 }
+
 .nav__links {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
+  width: auto;
+  padding: 0;
+  margin: 0;
 }
+
 .nav__links a {
   white-space: nowrap;
+  width: auto;
 }
+ nav__bar
+
 .nav__row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .nav__logo {
@@ -208,6 +232,10 @@ img.customers-logo-strip {
   padding: 10px 32px;
   border-radius: 9999px;
   white-space: nowrap;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  text-align: center;
 }
   .nav__link--secondary {
   background-color: transparent;
@@ -239,7 +267,16 @@ img.customers-logo-strip {
   color: white;
   border: none;
   cursor: pointer;
+}
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 16px 24px;
 }
 
 .btn {
@@ -279,6 +316,12 @@ img.customers-logo-strip {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
     brightness(94%) contrast(115%);
     display: inline-block;
+}
+img.customers-logo-strip {  
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 32px;
 }
 
 .modal {
@@ -368,7 +411,6 @@ header {
 }
 .header-text {
   width: 40%;
-  min-width: 0;
   text-align: left;
 }
 
@@ -479,12 +521,19 @@ FEATURES ↓
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: auto;
 
 }
 .features__intro {
   width: 100%;
   text-align: center;
   margin-bottom: 48px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #features .row__narrow {
@@ -526,6 +575,8 @@ FEATURES ↓
   font-size: 24px;
   text-align: left;
   margin-bottom: 16px;
+  width: 100%;
+  height: auto;
 }
 .feature__img {
   width: 100%;
@@ -545,12 +596,16 @@ FEATURES ↓
   width: calc(100% / 3);
   padding: 24px;
   text-align: left;
+  height: auto;
 }
 
 .feature list li {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+  gap: 16px;
+  width: 100%;
+  height: auto;
 
 }
 .feature__icon {
@@ -561,6 +616,7 @@ FEATURES ↓
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 16px;
 }
 
 .feature__icon i {
@@ -584,6 +640,7 @@ FEATURES ↓
   width: calc(100% / 3);
   padding: 24px;
   text-align: left;
+  height: auto;
 }
 .service__icon {
   width: 56px;
@@ -616,6 +673,9 @@ QUALITY WORK ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 24px;
 
 }
 .container{
@@ -624,6 +684,9 @@ display: flex;
 flex-direction: column;
 padding: auto;
 margin: auto;
+width: 100%;
+height: auto;
+justify-content: center;
 }  
 /* 
 
@@ -660,6 +723,9 @@ PRICING ↓
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: auto;
 
 }
 
@@ -673,6 +739,9 @@ TESTIMONIALS ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
+  width: 100%;
+  height: auto;
 
 }
 
