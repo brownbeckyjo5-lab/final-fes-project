@@ -754,7 +754,14 @@ STEPS ↓
   gap: 48px;
 }
 
-#steps .steps__image,
+#steps .steps__image{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 #steps .steps__text {
   width: 50%;
 }
@@ -764,6 +771,19 @@ STEPS ↓
   height: auto;
   display: block;
 }
+#steps .steps__list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #1a1a1a;
+  font-size: 18px;
+}
+.steps__list li span {
+  font-size: 20px;
+  font-weight: 900;
+}
+
 
 /* 
 
