@@ -1007,6 +1007,32 @@ PRICING ↓
   margin: 0;
   padding: 0;
 }
+pricing__personal {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+  pricing__personal .btn {
+    background-color: #057465;
+    color: white;
+    border: none;
+  }
+ 
+pricing__pro .btn {
+  background-color: white;
+  color: #6415ff;
+  border: none;
+}
+
+pricing__enterprise .btn {
+  background-color: #c94a85;
+  color: white;
+  border: none;
+}
+
 /* 
 
 TESTIMONIALS ↓
