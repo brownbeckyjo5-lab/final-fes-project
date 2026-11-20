@@ -269,7 +269,7 @@ img.nav__img--icon {
   border: 2px solid #6415ff;
 }
 .nav__link--secondary:hover {
-  font-family:;
+  font-family: inherit;
   background-color: #6415ff;
   color: white;
   border: none;
@@ -1057,6 +1057,44 @@ TESTIMONIALS ↓
   width: 100%;
   height: auto;
 }
+.testimonials__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonials__image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.testimonials__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: auto;
+}
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+}
+.testimonial__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 
 /* 
 
