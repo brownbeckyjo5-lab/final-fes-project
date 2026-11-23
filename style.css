@@ -881,6 +881,35 @@ VALUES ↓
   margin: 0;
   padding: 0;
 }
+.principles__title {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  text-align: left;
+}
+.principles__image{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.principles__feature {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.principles__text {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+} 
 
 /*
 
@@ -905,6 +934,13 @@ PRICING ↓
   padding: 0;
 }
 .pricing__label {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+pricing button {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -950,6 +986,49 @@ PRICING ↓
   padding: 0;
   list-style: none;
 }
+.pricing__card-features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+}
+.pricing__card-features li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.feature__list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+  width: 100%;
+  height: auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: calc(100% / 3);
+  padding: 24px;
+  text-align: left;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.feature__text {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 .bolder {
   font-weight: 750;
 }
@@ -972,14 +1051,13 @@ PRICING ↓
   width: 100%;
   height: auto;
   font-weight: 600;
-  bold: 600;
 }
 .pricing__list li i {
   color: #6415ff;
 }
 .pricing__list li span {
   font-weight: 600;
-  bold: 620;
+  font-weight: 620;
 }
 .pricing__button {
   text-align: center;
@@ -1007,7 +1085,7 @@ PRICING ↓
   margin: 0;
   padding: 0;
 }
-pricing__personal {
+.pricing__personal {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1015,19 +1093,19 @@ pricing__personal {
   padding: 0;
 }
 
-  pricing__personal .btn {
-    background-color: #057465;
-    color: white;
-    border: none;
-  }
- 
-pricing__pro .btn {
+.pricing__personal .btn {
+  background-color: #057465;
+  color: white;
+  border: none;
+}
+
+.pricing__pro .btn {
   background-color: white;
   color: #6415ff;
   border: none;
 }
 
-pricing__enterprise .btn {
+.pricing__enterprise .btn {
   background-color: #f56565;
   color: white;
   border: none;
@@ -1040,7 +1118,8 @@ pricing__enterprise .btn {
   margin-top: 12px;
 }
 
-.pricing__card:nth-child(2) .pricing__monthly {
+.pricing__card:nth-child(2)
+ .pricing__monthly {
   color: white;
 }
 /* 
@@ -1068,11 +1147,16 @@ TESTIMONIALS ↓
   display: flex;
   justify-content: center;
   align-items: center;
+  size-adjust: 20%;
+  mask-image: 20%;
 }
 .testimonials__image img {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
+  image-rendering: optimizeQuality;
+  size-adjust: 20%;
+ 
 }
 .testimonials__list {
   display: flex;
@@ -1094,7 +1178,29 @@ TESTIMONIALS ↓
   border-radius: 50%;
   overflow: hidden;
 }
-
+.testimonials__hover:hover {
+  color: #15ffff;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.testimonial__body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #7c8ba1;
+}
+.testimonial__author {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a202c;
+}
+.testimonial__author .bold {
+  font-weight: 700;
+  color: #6415ff;
+}
+.testimonial__author span {
+  font-weight: 700;
+  color: #6415ff;
+}
 
 /* 
 
@@ -1113,7 +1219,7 @@ FOOTER ↓
 
 */
 
-footer {
+.footer {
   padding: 96px 32px;
   background-color: rgb(100, 21, 255);
   margin-bottom: -32px;
@@ -1147,7 +1253,7 @@ MOBILE RESPONSIVENESS ↓
     background-color: white;
     margin-bottom: 32px;
   }
-  footer {
+  .footer {
     padding: 80px 32px;
     display: flex;
     justify-content: space-between;
@@ -1237,3 +1343,13 @@ MOBILE RESPONSIVENESS ↓
 .pricing__card:last-child {
   border-top: 8px solid #f56565;
 }
+@media (max-width: 768px) {
+  .pricing__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing__card {
+    width: 100%;
+    max-width: 350px;
+  }
