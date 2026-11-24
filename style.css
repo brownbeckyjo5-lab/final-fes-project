@@ -1279,6 +1279,20 @@ FOOTER ↓
   width: 50px;
   height: auto;
 }
+.footer__logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footer__logo img:hover {
+  filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
+    brightness(94%) contrast(115%);
+}
+.footer__main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* 
 
@@ -1309,7 +1323,6 @@ MOBILE RESPONSIVENESS ↓
     justify-content: space-between;
     align-items: center;
     margin-bottom: -32px;
-  }
 }
 
 @media (max-width: 768px) {
