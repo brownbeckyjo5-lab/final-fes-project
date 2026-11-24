@@ -1229,6 +1229,56 @@ FOOTER ↓
   justify-content: space-between;
   align-items: center;
 }
+.footer__text {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.footer__links a {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__links a:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__link--primary {
+  background-color: white;
+  color: #6415ff;
+  padding: 10px 32px;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+.footer__icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  size-adjust: 20%;
+}
+.footer__social-link {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__social-link:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__logo {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 50px;
+  height: auto;
+}
 
 /* 
 
