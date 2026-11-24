@@ -1221,7 +1221,7 @@ FOOTER ↓
 
 .footer {
   padding: 96px 32px;
-  background-color: rgb(100, 21, 255);
+  background-color: #6415ff;
   margin-bottom: -32px;
   position: relative;
   overflow: hidden;
@@ -1262,6 +1262,11 @@ FOOTER ↓
   align-items: center;
   size-adjust: 20%;
 }
+.footer__icons img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
 .footer__social-link {
   color: white;
   font-size: 16px;
@@ -1278,11 +1283,13 @@ FOOTER ↓
   right: 16px;
   width: 50px;
   height: auto;
+  padding: 8px;
 }
 .footer__logo img {
   width: 100%;
   height: auto;
   display: block;
+  padding: 8px;
 }
 .footer__logo img:hover {
   filter: invert(26%) sepia(94%) saturate(7476%) hue-rotate(261deg)
@@ -1292,6 +1299,102 @@ FOOTER ↓
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
+}
+.footer__link--PRODUCT:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__main a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+
+}
+.footer__main a:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__primary {
+  background-color: white;
+  color: #6415ff;
+  padding: 10px 32px;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+.footer__primary:hover {
+  background-color: #15ffff;
+  color: white;
+  text-decoration: none;
+}
+.footer__press {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  size-adjust: 20%;
+}
+.footer__press img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.footer__press a {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__press a:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__press-link {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__press-link:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__press-link img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.footer__team {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  size-adjust: 20%;
+}
+.footer__team img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.footer__team a {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__team a:hover {
+  color: #15ffff;
+  text-decoration: underline;
+}
+.footer__team-link {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer__team-link:hover {
+  color: #85ebeb;
+  text-decoration: underline;
+  padding-left: 8px;
 }
 
 /* 
@@ -1416,3 +1519,4 @@ MOBILE RESPONSIVENESS ↓
     width: 100%;
     max-width: 350px;
   }
+}
